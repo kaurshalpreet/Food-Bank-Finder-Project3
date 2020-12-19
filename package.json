@@ -33,7 +33,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "api": "nodemon ./server/server.js",
-    "start": "concurrently \"react-scripts start\" \"nodemon server/server.js\""
+    "start": "node server/server.js"
   },
   "repository": {
     "type": "git",
