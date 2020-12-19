@@ -1,0 +1,11 @@
+.navbar {
+  text-align: center;
+  font-size: 20px;
+  color: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  padding: 25px;
+}
