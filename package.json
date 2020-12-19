@@ -28,11 +28,6 @@
     "nodemon": "^1.17.5"
   },
   "scripts": {
-    "dev": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "api": "nodemon ./server/server.js",
     "start": "node server/server.js"
   },
   "repository": {
