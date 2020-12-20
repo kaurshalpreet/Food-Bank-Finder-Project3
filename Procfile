@@ -1,2 +1,2 @@
-web: src/app.js
+web: client/server/server.js
 web: bin/boot
