@@ -61,7 +61,7 @@ class SignUp extends React.Component {
     // Otherwise we log any errors
     signUpUser(firstName, lastName, email, password) {
 
-      axios.post("/user/", {
+      axios.post("/", {
         firstName: firstName,
         lastName: lastName,
         email: email,
