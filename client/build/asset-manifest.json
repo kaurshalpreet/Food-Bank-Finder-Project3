@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.5b521706.chunk.css",
+    "main.js": "/static/js/main.cab24a1e.chunk.js",
+    "main.js.map": "/static/js/main.cab24a1e.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.9759675e.js",
+    "runtime-main.js.map": "/static/js/runtime-main.9759675e.js.map",
+    "static/js/2.2d2cd278.chunk.js": "/static/js/2.2d2cd278.chunk.js",
+    "static/js/2.2d2cd278.chunk.js.map": "/static/js/2.2d2cd278.chunk.js.map",
+    "static/js/3.5bcc05df.chunk.js": "/static/js/3.5bcc05df.chunk.js",
+    "static/js/3.5bcc05df.chunk.js.map": "/static/js/3.5bcc05df.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.5b521706.chunk.css.map": "/static/css/main.5b521706.chunk.css.map",
+    "static/js/2.2d2cd278.chunk.js.LICENSE.txt": "/static/js/2.2d2cd278.chunk.js.LICENSE.txt",
+    "static/media/SignIn.css": "/static/media/AdobeStock_336228679.068540b5.jpeg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9759675e.js",
+    "static/js/2.2d2cd278.chunk.js",
+    "static/css/main.5b521706.chunk.css",
+    "static/js/main.cab24a1e.chunk.js"
+  ]
+}
