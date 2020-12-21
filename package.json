@@ -31,7 +31,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "api": "nodemon ./server/server.js",
-    "dev": "concurrently \"react-scripts start\" \"nodemon server/server.js\""
+    "dev": "concurrently \"react-scripts start\" \"nodemon server/server.js\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install npm && run build"
   },
   "devDependencies": {
     "concurrently": "^3.5.1",
