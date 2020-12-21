@@ -31,7 +31,6 @@
     "start": " node server/server.js",
     "start:original": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
     "start:prod": "node server/server.js",
-    "build": "cd public && npm run build",
     "client": "cd public && npm run start",
     "dev": "concurrently \"react-scripts start\" \"nodemon server/server.js\""
   },
