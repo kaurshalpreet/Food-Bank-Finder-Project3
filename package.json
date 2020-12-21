@@ -27,11 +27,11 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
-    "begin": "npm run build && node server.js",
-    "start": " node server/server.js",
-    "start:original": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
-    "start:prod": "node server/server.js",
-    "client": "cd public && npm run start",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "api": "nodemon ./server/server.js",
     "dev": "concurrently \"react-scripts start\" \"nodemon server/server.js\""
   },
   "devDependencies": {
