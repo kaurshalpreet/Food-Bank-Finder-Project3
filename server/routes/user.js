@@ -2,6 +2,7 @@ const express = require('express')
 const router = express.Router()
 const User = require('../database/models/user')
 const passport = require('../passport')
+const path = require('path')
 
 var renderInfo ={
     name: [],
@@ -10,6 +11,9 @@ var renderInfo ={
     city: [],
     hours: []
 }
+router.use(function(req,res) {
+        res.sendFile(path.join(__dirname), "../build/index.html")
+})
 
 router.post('/', (req, res) => {
     console.log('user signup');
