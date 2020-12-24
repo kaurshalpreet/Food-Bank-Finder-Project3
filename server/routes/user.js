@@ -5,7 +5,7 @@ const passport = require('../passport')
 const path = require('path')
 
 router.use(function(req, res) {
-	res.sendFile(path.join(__dirname, './build/index.html'));
+	res.sendFile('./build/index.html');
 });
 
 
