@@ -10,6 +10,7 @@ const PORT = process.env.PORT || 8080;
 const cors = require('cors');
 // Route requires
 const user = require('./routes/user')
+const path = require('path')
 
 // MIDDLEWARE
 app.use(morgan('dev'))
@@ -39,6 +40,10 @@ app.use(
 		saveUninitialized: false //required
 	})
 )
+
+app.get('*', (request, response) => {
+	response.sendFile(path.join(__dirname, './build', 'index.html'));
+});
 
 // Passport
 app.use(passport.initialize())
