@@ -11,9 +11,9 @@ var renderInfo ={
     city: [],
     hours: []
 }
-router.use(function(req,res) {
-        res.sendFile(path.join(__dirname), "../build/index.html")
-})
+// router.use(function(req,res) {
+//         res.sendFile(path.join(__dirname), "../build/index.html")
+// })
 
 router.post('/', (req, res) => {
     console.log('user signup');
