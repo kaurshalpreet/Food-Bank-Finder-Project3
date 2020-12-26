@@ -26,10 +26,35 @@ app.use(cors());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-if (process.env.NODE_ENV === 'production') {
-	app.use(express.static('/build'));
-  }
-  
+
+app.use(express.static('build'))
+
+
+// if (process.env.NODE_ENV === 'production') {
+// 	app.use(express.static('build'));
+//   }
+
+app.use('/static', express.static(path.join(__dirname, 'build//static')));
+// app.get('/', function(req, res) {
+//   res.sendFile('index.html', {root: path.join(__dirname, '../build')});
+// });
+
+app.get('/', (request, response) => {
+	response.sendFile(path.join(__dirname, 'build', 'index.html'));
+});
+
+app.get('/SignUp', (request, response) => {
+	response.sendFile(path.join(__dirname, '../build', 'index.html'));
+});
+
+app.get('/members', (request, response) => {
+	response.sendFile(path.join(__dirname, '../build', 'index.html'));
+});
+
+app.get('/about', (request, response) => {
+	response.sendFile(path.join(__dirname, '../build', 'index.html'));
+});
+
 
 // Sessions
 app.use(
@@ -41,9 +66,8 @@ app.use(
 	})
 )
 
-app.get('*', (request, response) => {
-	response.sendFile(path.join(__dirname, './build', 'index.html'));
-});
+
+
 
 // Passport
 app.use(passport.initialize())
