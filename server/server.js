@@ -35,9 +35,7 @@ app.use(express.static('build'))
 //   }
 
 app.use('/static', express.static(path.join(__dirname, 'build//static')));
-// app.get('/', function(req, res) {
-//   res.sendFile('index.html', {root: path.join(__dirname, '../build')});
-// });
+
 
 app.get('/', (request, response) => {
 	response.sendFile(path.join(__dirname, 'build', 'index.html'));
