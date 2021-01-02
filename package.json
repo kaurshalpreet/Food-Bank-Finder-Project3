@@ -28,6 +28,7 @@
   },
   "scripts": {
     "heroku-postbuild": "npm install && npm run build",
+    "build": "react-scripts build",
     "start": "node server/server.js"
   },
   "devDependencies": {
@@ -52,7 +53,7 @@
       "last 1 safari version"
     ]
   },
-  "proxy":"https:localhost:3000",
+  "proxy": "https:localhost:3000",
   "engines": {
     "node": "12.x",
     "npm": "6.x"

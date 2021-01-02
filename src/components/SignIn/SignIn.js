@@ -75,7 +75,7 @@ render() {
     <form className="form-signin" onSubmit={this.loginFormSubmit}>
       <h1 className="h3 mb-3 font-weight-normal"> FOOD BANK FINDER </h1>
   <img className="mb-4" src="find-foodbank.jpg" alt="" width="150" height="150" />
-  <h1 className="h3 mb-3 font-weight-normal">Dont sign in</h1>
+  <h1 className="h3 mb-3 font-weight-normal">Don't sign in</h1>
   <label for="inputEmail" className="sr-only">Email address</label>
   <input type="email" value={this.state.emailInput} onChange={this.emailchange} id="inputEmail" className="form-control" placeholder="Email address" required autofocus />
   <label for="inputPassword" className="sr-only">Password</label>
